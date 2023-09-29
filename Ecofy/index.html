@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="icon" href="logo.png" />
+    <title>Ecofy</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="z-depth-0 grey lighten-4 sticky">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">
+          <img src="logo.png" style="width: 60px; margin-left: 10px" />
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="logged-in" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-account"
+              >Despre cont</a
+            >
+          </li>
+          <li class="logged-in" style="display: none">
+            <a href="#" class="grey-text" id="logout">Deconectează-te</a>
+          </li>
+          <li class="logged-in" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-create"
+              >Sugestii</a
+            >
+          </li>
+          <li class="logged-out" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-login"
+              >Conectează-te</a
+            >
+          </li>
+          <li class="logged-out" style="display: none">
+            <button>
+              <a
+                href="#"
+                class="grey-text modal-trigger"
+                data-target="modal-signup"
+                >Creează cont</a
+              >
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="background">
+      <img src="trecut.jpg" alt="" class="poza" />
+      <img src="prezent.jpg" alt="" class="poza1" />
+      <img src="viitor.jpg" alt="" class="poza2" />
+    </div>
+
+    <!--Animation-->
+    <div class="animatie">
+      <main>
+        <section class="landing">
+          <h2 class="big-text">E c o f y</h2>
+          <p class="small-text">
+            Bine ai venit ! Ecofy este o mașină a timpului care prezintă
+            informații despre istoricul poluării , prezentul acesteia și cum
+            poate fi evitată pe viitor ! Nu uită să te conectezi și să ne lași o
+            sugetie în secțiunea specială a site-ului !
+          </p>
+        </section>
+      </main>
+      <div class="intro">
+        <div class="intro-text">
+          <h1 class="hidden">
+            <span class="text">TRECUT </span>
+          </h1>
+          <h1 class="hidden">
+            <span class="text">PREZENT</span>
+          </h1>
+          <h1 class="hidden">
+            <span class="text">VIITOR</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="slider"></div>
+
+    <!--Trecut-->
+    <div class="container-timp">
+      <section id="trecut" class="logged-in">
+        <div class="wrap">
+          <h1 class="titlu">Încălzirea Globală</h1>
+          <p class="scris scris-trecut">
+            Încălzirea globală este fenomenul de creștere continuă a
+            temperaturilor medii înregistrate ale atmosferei în imediata
+            apropiere a solului, precum și a apei oceanelor, constatată în
+            ultimele două secole, dar mai ales în ultimele decenii.
+          </p>
+          <div class="infos">
+            <h3 class="titlu">Era industrială</h3>
+            <p class="scris scris-trecut">
+              Când societatea umană a început să se industrializeze, am început
+              să schimbăm chimia atmosferei prin adăugarea de CO2 în aer.Pentru
+              a observa acest efect , ar trebui făcută o comparație între
+              timpurile de dinaintea industrializării și timpurile de astăzi.
+              Oamenii de știință se referă la acea perioadă de referință ca
+              „pre-industrială” urmată de „epoca industrială”.În perioada
+              pre-industrială , temperatura medie anuală se înregistra în jur de
+              -0.4° Celsius , iar în momentul de față aceasta se situează în jur
+              de 1° Celsius . Având în vedere dimensiunea și capacitatea de
+              căldură imensă a oceanelor globale, este nevoie de o cantitate
+              masivă de energie termică pentru a crește temperatura medie anuală
+              a suprafeței Pământului . Creșterea cu 2 grade a temperaturii
+              medii globale a suprafeței care a avut loc încă din era
+              preindustrială (1880-1900) ar putea părea mică, dar înseamnă o
+              creștere semnificativă a căldurii acumulate. Căldura suplimentară
+              determină temperaturi regionale și sezoniere extreme, reducând
+              stratul de zăpadă și gheața marină, intensificând precipitațiile
+              abundente și schimbând intervalele de habitate pentru plante și
+              animale - extinzând unele și micșorând altele.
+            </p>
+          </div>
+        </div>
+        <!-- Slider picture -->
+        <div class="container-slider">
+          <div class="img-container-after">
+            <img class="after" src="after.jpg" alt="" />
+          </div>
+          <div class="img-container-before">
+            <img class="before" src="before.jpg" alt="" />
+          </div>
+          <div class="slider-pz"></div>
+        </div>
+      </section>
+      <!--Prezent-->
+      <section id="prezent" class="logged-in">
+        <div class="wrap-prezent">
+          <h1 class="titlu">Împreună pentru schimbare</h1>
+          <p class="scris">
+            Uniunea Europeană (UE) se numără printre principalele economii
+            importante care se implică în combaterea emisiilor de gaze cu efect
+            de seră (GES). Până în 2018, a redus emisiile de gaze cu efect de
+            seră cu 23 % față de nivelurile din 1990, și s-a angajat să
+            realizeze o reducere de 40 % până în 2030.Pentru a plasa UE pe o
+            traiectorie echilibrată către neutralitatea emisiilor de dioxid de
+            carbon până în 2050, Comisia a propus, în septembrie 2020, un
+            obiectiv mai ambițios, și anume reducerea emisiilor de gaze cu efect
+            de seră cu 55 % până în 2030 față de nivelurile din 1990.În absența
+            unor politici suplimentare de reducere a emisiilor, se preconizează
+            o creștere a temperaturii medii globale cuprinsă între 1,1ºC și
+            6,4ºC în cursul acestui secol. Activitățile umane, cum ar fi arderea
+            de combustibili fosili, despăduririle și agricultura provoacă emisii
+            de dioxid de carbon (CO2), metan (CH4), protoxid de azot (N2O) și
+            fluorocarburi. Aceste GES înmagazinează căldura radiată de suprafața
+            terestră și o împiedică să se elibereze în spațiu, cauzând, astfel,
+            încălzirea globală.
+          </p>
+          <h3 class="titlu">
+            Moduri cum poți opri încălzirea globală chiar acum !
+          </h3>
+          <p class="scris">
+            1. Vorbește! Care este cel mai mare mod în care puteți avea un
+            impact asupra schimbărilor climatice globale? „Discutați cu
+            prietenii și familia și asigurați-vă că reprezentanții dvs. iau
+            decizii bune”,
+          </p>
+          <p class="scris">
+            2. Alimentează-ți casa cu energie regenerabilă. Alegeți o companie
+            de utilități care își generează cel puțin jumătate din energia
+            eoliană sau solară și care a fost certificată de Green-e Energy, o
+            organizație care verifică opțiunile de energie regenerabilă. Dacă
+            acest lucru nu este posibil pentru dvs., aruncați o privire la
+            factura dvs. electrică; multe utilități listează acum alte
+            modalități de a sprijini sursele regenerabile pe extrasele de cont
+            lunare și pe site-urile web.
+          </p>
+          <p class="scris">
+            3. . „Încălzirea și răcirea clădirilor sunt printre cele mai mari
+            utilizări ale energiei”. Într-adevăr, încălzirea și aerul
+            condiționat reprezintă aproape jumătate din consumul de energie în
+            casă. Puteți face spațiul mai eficient din punct de vedere energetic
+            prin etanșarea curenților de aer și asigurarea că este izolat în mod
+            adecvat. De asemenea, puteți solicita credite fiscale federale
+            pentru multe îmbunătățiri la domiciliu cu eficiență energetică.
+          </p>
+          <p class="scris">
+            4. Investiți în aparate eficiente din punct de vedere energetic. De
+            când au fost puse în aplicare la nivel național în 1987, standardele
+            de eficiență pentru zeci de aparate și produse au păstrat 2,3
+            miliarde de tone de dioxid de carbon în aer. Aceasta este
+            aproximativ aceeași cantitate cu poluarea anuală cu carbon produsă
+            de aproape 440 de milioane de mașini.Când cumpărați frigidere,
+            mașini de spălat și alte aparate, căutați eticheta Energy Star. Vă
+            va spune care sunt cele mai eficiente.
+          </p>
+          <p class="scris">
+            5. Reduceți risipa de apă. Economisirea apei reduce și poluarea cu
+            carbon. Asta pentru că este nevoie de multă energie pentru a vă
+            pompa, încălzi și trata apa. Așadar, faceți dușuri mai scurte,
+            opriți robinetul în timp ce vă spălați pe dinți și treceți la
+            aparatele dotate cu WaterSense.
+          </p>
+          <p class="scris">
+            6. Mănâncă mâncarea pe care o cumperi - și redu carnea. Aproximativ
+            10 la sută din consumul de energie din SUA este destinat cultivării,
+            procesării, ambalării și livrării produselor alimentare - din care
+            aproximativ 40 la sută ajung să fie risipite. „Dacă risipiți mai
+            puține alimente, probabil că veți reduce consumul de energie”
+          </p>
+        </div>
+      </section>
+      <!--Viitor-->
+      <section id="viitor" class="logged-in">
+        <div class="wrap-prezent">
+          <h1 class="titlu">Viitorul</h1>
+          <h4 class="titlu">Măsuri luate de UE</h4>
+          <p class="scris">
+            Atingerea neutralității climatice până în 2050 va deveni obligatorie
+            pentru fiecare stat membru UE, care trebuie să înființeze un
+            organism special pentru monitorizarea procesului de armonizare a
+            practicilor naționale cu legislația europeană. La rândul ei, Uniunea
+            Europeană va înființa un corp consultativ independent care va
+            verifica dacă politicile sunt în linie cu prevederile Acordului de
+            Climă de la Paris. Va fi format din oameni de știință selectați de
+            Parlament, Comisie și statele membre.
+          </p>
+          <div class="infos">
+            <h4 class="titlu">Scenarii viitoare provocate de ignoranță</h4>
+            <p class="scris">
+              Schimbarea precipitațiilor: o temperatură globală medie mai caldă
+              va determina o rată mai mare de evaporare, determinând ciclul apei
+              să „accelereze”. Mai mulți vapori de apă în atmosferă vor duce la
+              mai multe precipitații. Precipitațiile medii globale cresc cu 1%
+              până la 3% pentru fiecare grad de încălzire, ceea ce înseamnă că
+              ne uităm la un viitor mai ploios și mai înzăpezit. Până în 2100,
+              precipitațiile vor crește cu cel puțin 1% și o creștere maximă de
+              aproximativ 12%. Cu toate acestea, modificările precipitațiilor nu
+              vor fi distribuite uniform. Unele locații vor primi mai mult, iar
+              altele vor vedea mai puțin.
+            </p>
+            <p class="scris">
+              Creșterea nivelului mării: un climat mai cald determină creșterea
+              nivelului mării prin două mecanisme: (1) topirea ghețarilor și a
+              straturilor de gheață (gheață pe uscat) adaugă apă în oceane,
+              ridicând nivelul mării și (2) apa oceanului se extinde pe măsură
+              ce se încălzește , mărindu-și volumul și astfel ridicând și
+              nivelul mării. În secolul al XX-lea, nivelul mării a crescut cu
+              aproximativ 10-20 cm .
+            </p>
+            <p class="scris">
+              Apă oceanică acidă: se estimează că oceanele Pământului vor
+              acționa ca un tampon împotriva schimbărilor climatice prin
+              preluarea unei cantități excesive de căldură și dioxid de carbon
+              din atmosferă. Aceasta este o veste bună pe termen scurt, dar mai
+              problematică pe termen lung. Dioxidul de carbon combinat cu apa de
+              mare formeaza acid carbonic slab. Oamenii de știință cred că acest
+              proces a redus pH-ul oceanelor cu aproximativ 0,1 pH din perioada
+              pre-industrială. Se preconizează o acidificare suplimentară de
+              0,14-0,35 pH până în anul 2100. Apa oceanică mai acidă poate cauza
+              probleme organismelor marine.
+            </p>
+            <p class="scris">
+              Riscuri pentru viața marină: ecosistemele oceanice se schimbă deja
+              pe măsură ce apa se încălzește și vor continua să se schimbe pe
+              măsură ce continuă să se încălzească. Animalele precum peștii se
+              pot deplasa în alte ecosisteme cu apă mai rece la latitudini mai
+              mari. Dar multe organisme marine - cum ar fi algele și coralii -
+              care nu sunt capabili să înoate în altă parte prezintă un risc
+              ridicat.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- SIGN UP MODAL -->
+    <div id="modal-signup" class="modal">
+      <div class="modal-content">
+        <h4>Creează cont</h4>
+        <br />
+        <form id="signup-form">
+          <div class="input-field">
+            <input type="email" id="signup-email" required />
+            <label for="signup-email">Adresa Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="signup-password" required />
+            <label for="signup-password">Alege o parolă</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="signup-bio" required />
+            <label for="signup-bio"
+              >Care este motivația ta pentru salvarea naturii ?🌳</label
+            >
+          </div>
+
+          <button class="btn yellow darken-2 z-depth-0">Creează cont</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div id="modal-login" class="modal">
+      <div class="modal-content">
+        <h4>Conectează-te</h4>
+        <br />
+        <form id="login-form">
+          <div class="input-field">
+            <input type="email" id="login-email" required />
+            <label for="login-email">Adresa Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="login-password" required />
+            <label for="login-password">Parola</label>
+          </div>
+          <button class="btn yellow darken-2 z-depth-0">Conectează-te</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ACCOUNT MODAL -->
+    <div id="modal-account" class="modal">
+      <div class="modal-content center-align">
+        <h4>Despre cont</h4>
+        <br />
+        <div class="account-details"></div>
+      </div>
+    </div>
+
+    <!-- CREATE SUGGESTOIN -->
+    <div id="modal-create" class="modal">
+      <div class="modal-content">
+        <h4>Sugestii</h4>
+        <br />
+        <form id="create-form">
+          <div class="input-field">
+            <input type="text" id="title" required />
+            <label for="title">Titlu</label>
+          </div>
+          <div class="input-field">
+            <textarea
+              id="content"
+              class="materialize-textarea"
+              required
+            ></textarea>
+            <label for="content">Conținut</label>
+          </div>
+          <button class="btn yellow darken-2 z-depth-0">Creează</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- SUGGESTIONS -->
+    <div class="container" style="margin-top: 40px">
+      <ul class="collapsible z-depth-0 guides" style="border: none"></ul>
+    </div>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBtWk5BZEHOhvpdeiKUDyrxJNMZ_TYYZVg",
+        authDomain: "auth-ecofy.firebaseapp.com",
+        projectId: "auth-ecofy",
+        appId: "1:857901953965:web:00bff99f65cfc211aee724",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="index.js "></script>
+
+    <!--JS animations-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
